@@ -1,6 +1,6 @@
 package Bai2;
 
-public class Hinh extends DanhSachHinh{
+public class Hinh{
     public double DienTich(){
         return 0 ;
     }

@@ -2,9 +2,9 @@ package Bai2;
 
 public class HinhTron extends Hinh {
     float r;
-
+    public HinhTron() {
+    }
     public HinhTron(float r){
-        super();
         this.r = r ;
     }
 
@@ -15,7 +15,7 @@ public class HinhTron extends Hinh {
         this.r = r;
     }
     public String toString(){
-        return "Ban kinh : "+ r ;
+        return "Ban kinh = "+ r + " , Dien tich = "+DienTich(); 
     }
     @Override
     public double DienTich(){

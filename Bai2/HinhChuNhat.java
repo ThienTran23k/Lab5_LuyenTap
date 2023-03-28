@@ -3,8 +3,9 @@ package Bai2;
 public class HinhChuNhat  extends Hinh{
     float cd , cr;
 
+    public HinhChuNhat() {
+    }
     public HinhChuNhat(float cd ,float cr){
-        super();
         this.cd = cd;
         this.cr = cr;
     }
@@ -24,7 +25,7 @@ public class HinhChuNhat  extends Hinh{
         this.cr = cr;
     }
     public String toString(){
-        return "Chieu dai : "+ cd + "Chieu rong :"+cr ;
+        return "Chieu dai = "+ cd + " , Chieu rong :"+cr + " , Dien tich = "+DienTich();
     }
     @Override
     public double DienTich(){

@@ -3,23 +3,22 @@ package Bai2;
 import java.util.ArrayList;
 
 public class DanhSachHinh {
-    private ArrayList<Hinh> list = new ArrayList<Hinh>();
+    public ArrayList<Hinh> list;
 
+    public DanhSachHinh(ArrayList<Hinh> list ){
+        this.list = list ;
 
-    public DanhSachHinh(){
-        
-}
+    }
+    DanhSachHinh() {     
+        this.list = new ArrayList<Hinh>();
+    }
     public void ThemHinh(Hinh s){
         list.add(s) ;
     }
     public void InDanhSach(){
-        ArrayList<HinhChuNhat> hcn = new ArrayList<HinhChuNhat>();
-        for ( int i= 0 ; i < hcn.size();i++)
-            hcn.toString();
-        ArrayList<HinhTron> ht = new ArrayList<HinhTron>();
-        for ( int i= 0 ; i < ht.size();i++)
-            ht.toString();
-            
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i).toString());
+        }
     }
 
 }
