@@ -24,12 +24,12 @@ public class GiaoDichTienTe extends GiaoDich {
     public void setLoaiTienTe(String loaiTienTe) {
         this.loaiTienTe = loaiTienTe;
     }
-    public double ThanhTienVN(){
-        return soLuong * donGia;
-    }
+
     @Override
     public double ThanhTien(){
         return soLuong * donGia * tiGia;
     }
-    
+    public double getThanhTien(){
+        return soLuong * donGia * tiGia;
+    }
 }
